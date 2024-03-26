@@ -8,4 +8,8 @@ class StartPresenter: StartPresenterProtocol {
     required init(view: StartViewProtocol) {
         self.view = view
     }
+    
+    func presentSimulate() {
+        router?.presentSimulate()
+    }
 }

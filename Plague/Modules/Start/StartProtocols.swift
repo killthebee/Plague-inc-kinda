@@ -8,9 +8,11 @@ protocol StartConfiguratorProtocol: AnyObject {
 
 protocol StartPresenterProtocol: AnyObject {
     var router: StartRouterProtocol? { get }
+    func presentSimulate()
 }
 
 protocol StartRouterProtocol: AnyObject {
+    func presentSimulate()
 }
 
 protocol StartInteractorProtocol: AnyObject {
