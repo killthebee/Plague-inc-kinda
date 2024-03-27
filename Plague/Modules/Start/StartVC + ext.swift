@@ -3,7 +3,6 @@ import UIKit
 extension StartViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-//        let placeHolder = textField.placeholder ?? ""
         textField.placeholder = ""
     }
     
