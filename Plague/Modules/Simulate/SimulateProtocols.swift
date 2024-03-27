@@ -4,6 +4,7 @@ protocol SimulateViewProtocol: AnyObject {
     var lastRow: Int? { get set }
     var infected: Set<Coord> { get set }
     func updateGrid()
+    func updateCounts()
 }
 
 protocol SimulateConfiguratorProtocol: AnyObject {

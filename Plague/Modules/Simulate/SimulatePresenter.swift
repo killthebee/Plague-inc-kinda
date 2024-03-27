@@ -21,8 +21,7 @@ class SimulatePresenter: SimulatePresenterProtocol {
     func setGridParams(_ rows: Int, _ lastRow: Int) {
         view?.rows = rows
         view?.lastRow = lastRow
-        print(lastRow)
-        interactor?.lastRow = rows + 1
+        interactor?.lastRow = lastRow
         interactor?.rows = rows
     }
     
@@ -33,6 +32,7 @@ class SimulatePresenter: SimulatePresenterProtocol {
     @MainActor
     func updateGrid() async {
         view?.updateGrid()
+        view?.updateCounts()
     }
     
     func setSpredSpeed(_ infectionSpredSpeed: Int) {

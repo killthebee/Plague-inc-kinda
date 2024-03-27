@@ -50,6 +50,7 @@ extension SimulateViewController:
         ) as? HumanCell {
             clickedCell.markAsInfected()
             presenter?.humanInfected(indexPath.section, indexPath.row)
+            updateCounts()
         }
     }
 }

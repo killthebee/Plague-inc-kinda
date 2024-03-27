@@ -109,7 +109,7 @@ class SimulateInteractor: SimulateInteractorProtocol {
         let notNegative = row >= 0 && column >= 0
         let notTooBig: Bool!
         if row == rows {
-            notTooBig = column <= lastRow
+            notTooBig = column < lastRow
         } else {
             notTooBig = row < rows && coord.column < 7
         }

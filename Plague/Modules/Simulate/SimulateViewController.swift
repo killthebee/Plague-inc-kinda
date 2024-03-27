@@ -7,8 +7,11 @@ class SimulateViewController: UIViewController, SimulateViewProtocol {
     var rows: Int?
     var lastRow: Int?
     var infected = Set<Coord>()
+    var population = 0
     
     func makeGrid(_ population: Int) {
+        self.population = population
+        updateCounts()
         presenter?.makeGrid(population)
     }
     
@@ -22,6 +25,11 @@ class SimulateViewController: UIViewController, SimulateViewProtocol {
     
     func updateGrid() {
         collectionView.reloadData()
+    }
+    
+    func updateCounts() {
+        healthyLable.text = makeCount(population - infected.count)
+        illLable.text = makeCount(infected.count)
     }
     
     private let backgroundImage: UIImageView = {

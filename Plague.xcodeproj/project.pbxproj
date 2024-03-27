@@ -36,6 +36,7 @@
 		84B806A72BB34AE000B82A18 /* SimulateVC + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B806A62BB34AE000B82A18 /* SimulateVC + ext.swift */; };
 		84B806AC2BB3566900B82A18 /* HeaderAndCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B806AB2BB3566900B82A18 /* HeaderAndCount.swift */; };
 		84B806AE2BB4520C00B82A18 /* Array + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B806AD2BB4520C00B82A18 /* Array + ext.swift */; };
+		84B806B02BB4752500B82A18 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B806AF2BB4752500B82A18 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		84B806A62BB34AE000B82A18 /* SimulateVC + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulateVC + ext.swift"; sourceTree = "<group>"; };
 		84B806AB2BB3566900B82A18 /* HeaderAndCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAndCount.swift; sourceTree = "<group>"; };
 		84B806AD2BB4520C00B82A18 /* Array + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + ext.swift"; sourceTree = "<group>"; };
+		84B806AF2BB4752500B82A18 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				84B806872BB1F7C000B82A18 /* Colors.swift */,
 				84B806892BB1F99900B82A18 /* Fonts.swift */,
 				84B8068B2BB1FADB00B82A18 /* Strings.swift */,
+				84B806AF2BB4752500B82A18 /* Helpers.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				84B806782BB1E51000B82A18 /* StartRouter.swift in Sources */,
 				84B806752BB1E51000B82A18 /* StartProtocols.swift in Sources */,
 				84B806772BB1E51000B82A18 /* StartViewController.swift in Sources */,
+				84B806B02BB4752500B82A18 /* Helpers.swift in Sources */,
 				84B8068C2BB1FADB00B82A18 /* Strings.swift in Sources */,
 				84B806562BB1DE0600B82A18 /* AppDelegate.swift in Sources */,
 				84B8069A2BB33BF900B82A18 /* SimulateConfigurator.swift in Sources */,
