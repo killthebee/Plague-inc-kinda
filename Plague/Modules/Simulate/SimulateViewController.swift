@@ -1,14 +1,17 @@
 import UIKit
 
 class SimulateViewController: UIViewController, SimulateViewProtocol {
-        
+    
+    // MARK: Dependencies -
     var presenter: SimulatePresenterProtocol?
     
+    // MARK: Data -
     var rows: Int?
     var lastRow: Int?
     var infected = Set<Coord>()
     var population = 0
     
+    // MARK: Logic -
     func makeGrid(_ population: Int) {
         self.population = population
         updateCounts()
@@ -32,6 +35,7 @@ class SimulateViewController: UIViewController, SimulateViewProtocol {
         illLable.text = makeCount(infected.count)
     }
     
+    // MARK: UI Elements -
     private let backgroundImage: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "background")
@@ -96,9 +100,9 @@ class SimulateViewController: UIViewController, SimulateViewProtocol {
         return lable
     }()
     
+    // MARK: VC Setup -
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
         disableAutoresizing()
         addSubviews()
         configureLayout()
@@ -118,6 +122,7 @@ class SimulateViewController: UIViewController, SimulateViewProtocol {
         ].forEach{countContainerView.addSubview($0)}
     }
     
+    // MARK: Layout - 
     private func configureLayout() {
         let constraints: [NSLayoutConstraint] = [
             backgroundImage.leadingAnchor.constraint(

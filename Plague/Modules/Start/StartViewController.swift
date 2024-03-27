@@ -2,8 +2,10 @@ import UIKit
 
 class StartViewController: UIViewController, StartViewProtocol {
     
+    // MARK: Dependencies -
     var presenter: StartPresenterProtocol?
     
+    // MARK: Logic -
     @objc
     private func buttonPressed(_ sender: UIButton) {
         sender.startAnimatingPressActions()
@@ -14,6 +16,7 @@ class StartViewController: UIViewController, StartViewProtocol {
         )
     }
     
+    // MARK: UI Elements -
     private let backgroundImage: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "background")
@@ -108,7 +111,8 @@ class StartViewController: UIViewController, StartViewProtocol {
         
         return lable
     }()
-
+    
+    // MARK: VC Setup -
     override func viewDidLoad() {
         super.viewDidLoad()
         disableAutoresizing()
@@ -134,6 +138,7 @@ class StartViewController: UIViewController, StartViewProtocol {
         ].forEach{$0.translatesAutoresizingMaskIntoConstraints = false}
     }
     
+    // MARK: Layout - 
     private let paramsContainerView = UIView()
     
     private func configureLayout() {
