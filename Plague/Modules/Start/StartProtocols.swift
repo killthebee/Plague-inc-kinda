@@ -8,11 +8,19 @@ protocol StartConfiguratorProtocol: AnyObject {
 
 protocol StartPresenterProtocol: AnyObject {
     var router: StartRouterProtocol? { get }
-    func presentSimulate()
+    func presentSimulate(
+        _ size: String?,
+        _ factor: String?,
+        _ interval: String?
+    )
 }
 
 protocol StartRouterProtocol: AnyObject {
-    func presentSimulate()
+    func presentSimulate(
+        _ population: Int,
+        _ infectionSpredSpeed: Int,
+        _ timeOfOneTick: Int
+    )
 }
 
 protocol StartInteractorProtocol: AnyObject {

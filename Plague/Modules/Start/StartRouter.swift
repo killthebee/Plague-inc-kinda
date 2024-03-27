@@ -8,14 +8,22 @@ class StartRouter:  StartRouterProtocol {
         self.view = view
     }
     
-    func presentSimulate() {
+    func presentSimulate(
+        _ population: Int,
+        _ infectionSpredSpeed: Int,
+        _ timeOfOneTick: Int
+    ) {
         guard
             let simulateVC = assembly.makeSimulateScreen() as? SimulateViewController
         else {
             return
         }
+        simulateVC.makeGrid(population)
+        simulateVC.startInfectionTast(timeOfOneTick)
+        simulateVC.setSpredSpeed(infectionSpredSpeed)
         
         simulateVC.modalPresentationStyle = .fullScreen
+        simulateVC.modalTransitionStyle = .crossDissolve
         view?.present(simulateVC)
     }
 }

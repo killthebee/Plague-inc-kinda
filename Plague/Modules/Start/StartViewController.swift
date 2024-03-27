@@ -7,7 +7,11 @@ class StartViewController: UIViewController, StartViewProtocol {
     @objc
     private func buttonPressed(_ sender: UIButton) {
         sender.startAnimatingPressActions()
-        presenter?.presentSimulate()
+        presenter?.presentSimulate(
+            sizeTextField.text,
+            factorTextField.text,
+            intervalTextField.text
+        )
     }
     
     private let backgroundImage: UIImageView = {

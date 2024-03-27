@@ -9,7 +9,36 @@ class StartPresenter: StartPresenterProtocol {
         self.view = view
     }
     
-    func presentSimulate() {
-        router?.presentSimulate()
+    func presentSimulate(
+        _ size: String?,
+        _ factor: String?,
+        _ interval: String?
+    ) {
+        guard
+            let size = size,
+            let factor = factor,
+            let interval = interval
+        else
+            { return }
+        
+        let population: Int!
+        if let size = Int(size) {
+            population = size
+        } else {
+            population = 10
+        }
+        let infectionSpredSpeed: Int!
+        if let factor = Int(factor) {
+            infectionSpredSpeed = factor
+        } else {
+            infectionSpredSpeed = 3
+        }
+        let timeOfOneTick: Int!
+        if let interval = Int(interval) {
+            timeOfOneTick = interval
+        } else {
+            timeOfOneTick = 2
+        }
+        router?.presentSimulate(population, infectionSpredSpeed, timeOfOneTick)
     }
 }
