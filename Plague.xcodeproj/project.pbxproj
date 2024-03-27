@@ -37,8 +37,8 @@
 		84B806AC2BB3566900B82A18 /* HeaderAndCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B806AB2BB3566900B82A18 /* HeaderAndCount.swift */; };
 		84B806AE2BB4520C00B82A18 /* Array + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B806AD2BB4520C00B82A18 /* Array + ext.swift */; };
 		84B806B02BB4752500B82A18 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B806AF2BB4752500B82A18 /* Helpers.swift */; };
-		84B806B32BB48F4100B82A18 /* plaguePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B806B22BB48F4100B82A18 /* plaguePic.png */; };
 		84B806B52BB48F5B00B82A18 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84B806B42BB48F5B00B82A18 /* README.md */; };
+		84B806B72BB4928900B82A18 /* plaguePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B806B62BB4928900B82A18 /* plaguePic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,8 +74,8 @@
 		84B806AB2BB3566900B82A18 /* HeaderAndCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAndCount.swift; sourceTree = "<group>"; };
 		84B806AD2BB4520C00B82A18 /* Array + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + ext.swift"; sourceTree = "<group>"; };
 		84B806AF2BB4752500B82A18 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		84B806B22BB48F4100B82A18 /* plaguePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plaguePic.png; sourceTree = "<group>"; };
 		84B806B42BB48F5B00B82A18 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84B806B62BB4928900B82A18 /* plaguePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plaguePic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +212,7 @@
 		84B806B12BB48E9F00B82A18 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				84B806B22BB48F4100B82A18 /* plaguePic.png */,
+				84B806B62BB4928900B82A18 /* plaguePic.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B806B52BB48F5B00B82A18 /* README.md in Resources */,
-				84B806B32BB48F4100B82A18 /* plaguePic.png in Resources */,
+				84B806B72BB4928900B82A18 /* plaguePic.png in Resources */,
 				84B8065F2BB1DE0700B82A18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

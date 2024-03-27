@@ -138,12 +138,12 @@ class SimulateViewController: UIViewController, SimulateViewProtocol {
                 equalTo: view.bottomAnchor
             ),
             
-            countContainerView.topAnchor.constraint(
-                equalTo: view.safeAreaLayoutGuide.topAnchor
+            countContainerView.bottomAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+                constant: -50
             ),
-            countContainerView.trailingAnchor.constraint(
-                equalTo: view.trailingAnchor,
-                constant: -16
+            countContainerView.centerXAnchor.constraint(
+                equalTo: view.centerXAnchor
             ),
             countContainerView.widthAnchor.constraint(
                 equalToConstant: 140
